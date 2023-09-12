@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Сочники и университет</title>
+    </head>
+    <body>
+        <h1 > Сочники и университет </h1>
+        <ul>
+            <li><a id="Привет" href="http://kubsu.ru/">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
+            <li><a href="https://www.kubsu.ru"> абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
+            <a href="https://www.russianfood.com"><img src="./sochno.jpg" width="500" height="500" alt="ссылку-изображение"></a>
+            <li><a href="Сочники/Сочники.html">сокращенную ссылку на внутреннюю страницу</a></li>
+            <li><a href="../../Главная.html">сокращенную ссылку на главную страницу</a></li>
+            <li><a href="#Привет"> ссылку на фрагмент текущей страницы</a></li>
+            <li><a href="/?parametr1=1&parametr2=2&parametr3=3"> ссылку с тремя параметрами в URL</a></li>
+            <li><a href="/?Id=sochnik">ссылку с параметром id в URL</a></li>
+            <li><a href="./Университет и сочники.html">относительную на страницу в текущем каталоге</a></li>
+            <li><a href="../../about/О чём/О чём.html">относительную на страницу в каталоге about</a></li>
+            <li><a href="../Университет.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../Главная.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+            <li>Если привычные салаты уже наскучили, <a href="http://kubsu.ru/">салат</a> из помидоров, арбуза и феты станет вкусным открытием. Салат очень сочный благодаря помидорам и арбузу. Сочетание арбузной сладости и солоноватости феты уж точно удивит ваши вкусовые рецепторы!</li>
+            <li><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment">ссылку на фрагмент страницы стороннего сайта</a></li>
+            <a>cсылки из прямоугольных и круглых областей картинки: </a>
+            <br>
+            <a><img src="./123.png" usemap="#image-map" width="500" height="500" alt="???"></a>
+            <map name="image-map">
+                 <area shape="rect" coords="0,0,100,100" href="http://google.com/" alt="???">
+                 <area shape="circle" coords="0,0,300" href="http://yandex.ru/" alt="???">
+            </map>
+            <li><a href="">ссылку с пустым href</a></li>
+            <li><a>ссылку без href</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+            <li><noindex><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment" rel="nofollow">запрещенную для индексации поисковиками</a></noindex></li>
+
+        </ul>
+        <h2> Нумерованный список ссылок </h2>
+        <ol>
+            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+        </ol>
+        <h3> <a href="ftp://user:password@g.ru/gnu/file">ссылку на файл на сервере FTP с авторизацией</a></h3>
+        <form action="/" method="POST">      
+            <label>
+                ФИО:
+                <br>
+            </label>
+            <input name="field-name-1" >
+            <br>
+            <br>
+            <label>
+                Телефон:
+                <br>
+            </label>
+            <input name="field-tel" type="tel">
+            <br>
+            <br>
+            <label>
+              email:
+              <br>
+            </label>
+            <input name="field-email" type="email">
+            <br>
+            <label>
+              Дата рождения:<br>
+              <input name="field-date" type="date">
+            </label><br>
+      
+            Пол:<br>
+      
+            <label>
+              <input type="radio" checked="checked" name="radio-group-1">
+              Женский
+            </label>
+              <label><input type="radio" name="radio-group-1">
+              Мужской
+            </label><br >
+      
+              <label>
+                  Любимый язык программирования:
+                  <br>
+                  <select name="field-name-4[]"
+                    multiple="multiple">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                    
+                  </select>
+                </label><br>
+      
+            <label>
+              Биография:<br>
+              <textarea name="field-name-2"></textarea>
+            </label><br>
+      
+            <br>
+            <label id="contact">
+              <input type="checkbox" checked="checked" name="check-1" >
+              С контрактом ознакомлен (а):
+            </label><br>
+      
+            <input type="submit">
+            </form>
+    </body>
+</html>
