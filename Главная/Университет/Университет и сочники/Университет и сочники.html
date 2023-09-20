@@ -1,57 +1,142 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Сочники и университет</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style_task2.css">
+      <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+      <title>Сочники и университет(Дз2)</title>
     </head>
-    <body>
-        <h1 > Сочники и университет </h1>
-        <ul>
-            <li><a id="Привет" href="http://kubsu.ru/">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
-            <li><a href="https://www.kubsu.ru"> абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
-            <a href="https://www.russianfood.com"><img src="./sochno.jpg" width="500" height="500" alt="ссылку-изображение"></a>
-            <li><a href="Сочники/Сочники.html">сокращенную ссылку на внутреннюю страницу</a></li>
-            <li><a href="../../Главная.html">сокращенную ссылку на главную страницу</a></li>
-            <li><a href="#Привет"> ссылку на фрагмент текущей страницы</a></li>
-            <li><a href="/?parametr1=1&parametr2=2&parametr3=3"> ссылку с тремя параметрами в URL</a></li>
-            <li><a href="/?Id=sochnik">ссылку с параметром id в URL</a></li>
-            <li><a href="./Университет и сочники.html">относительную на страницу в текущем каталоге</a></li>
-            <li><a href="../../about/О чём/О чём.html">относительную на страницу в каталоге about</a></li>
-            <li><a href="../Университет.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
-            <li><a href="../../Главная.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
-            <li>Если привычные салаты уже наскучили, <a href="http://kubsu.ru/">салат</a> из помидоров, арбуза и феты станет вкусным открытием. Салат очень сочный благодаря помидорам и арбузу. Сочетание арбузной сладости и солоноватости феты уж точно удивит ваши вкусовые рецепторы!</li>
-            <li><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment">ссылку на фрагмент страницы стороннего сайта</a></li>
-            <a>cсылки из прямоугольных и круглых областей картинки: </a>
-            <br>
-            <a><img src="./123.png" usemap="#image-map" width="500" height="500" alt="???"></a>
-            <map name="image-map">
-                 <area shape="rect" coords="0,0,100,100" href="http://google.com/" alt="???">
-                 <area shape="circle" coords="0,0,300" href="http://yandex.ru/" alt="???">
-            </map>
-            <li><a href="">ссылку с пустым href</a></li>
-            <li><a>ссылку без href</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
-            <li><noindex><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment" rel="nofollow">запрещенную для индексации поисковиками</a></noindex></li>
-
-        </ul>
-        <h2> Нумерованный список ссылок </h2>
-        <ol>
-            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
-            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
-            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
-            <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
-        </ol>
-        <h3> <a href="ftp://user:password@g.ru/gnu/file">ссылку на файл на сервере FTP с авторизацией</a></h3>
-        <form action="/" method="POST">      
-            <label>
+    <body style="margin:0;">
+        <header>
+          <div class="name3">
+            <img src="logotip.jpg" width="120" height="120" alt="???">
+            <h1 class="name1"> Университет и Сочники </h1>
+            <nav class="name2">
+              <ul>
+                <div class="dropdown">
+                  <button class="dropdown-btn">Cервсисы</button>
+                  <div class="dropdown-content">
+                    <a href="#home">Новости</a>
+                    <a href="#about">Рецепты</a>
+                    <a href="#services">Общение*-*</a>
+                    <a href="#contact">Настройки</a>
+                  </div>
+                </div>
+                <a href="/main" title="Главная" class="nav-link">Главная</a>
+                <a href="/login" title="Войти" class="nav-link">Войти</a>
+                <a href="/sign" title="Регистрация" class="nav-link">Зарегистрироваться</a>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <nav>
+            <div class="main-menu">
+              <ul>
+                <li><a id="Привет" href="http://kubsu.ru/">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
+                <li><a href="https://www.kubsu.ru"> абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
+              </ul>
+              <ul>
+                <li><a href="Сочники/Сочники.html">сокращенную ссылку на внутреннюю страницу</a></li>
+                <li><a href="../../Главная.html">сокращенную ссылку на главную страницу</a></li>
+              </ul>
+              <ul>
+                <a href="https://www.russianfood.com"><img src="./sochno.jpg" width="500" height="500" alt="ссылку-изображение"></a>
+              </ul>
+              <ul>
+                <li><a href="#Привет"> ссылку на фрагмент текущей страницы</a></li>
+                <li><a href="/?parametr1=1&parametr2=2&parametr3=3"> ссылку с тремя параметрами в URL</a></li>
+              </ul>
+              <ul>
+                <li><a href="/?Id=sochnik">ссылку с параметром id в URL</a></li>
+                <li><a href="./Университет и сочники.html">относительную на страницу в текущем каталоге</a></li>
+              </ul>
+              <ul>
+                <li><a href="../../about/О чём/О чём.html">относительную на страницу в каталоге about</a></li>
+                <li><a href="../Университет.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+              </ul>
+              <ul>
+                <li><a href="../../Главная.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+              </ul>
+              <ul>
+                <li>Если привычные салаты уже наскучили, <a href="http://kubsu.ru/">салат</a> из помидоров, арбуза и феты станет вкусным открытием. Салат очень сочный благодаря помидорам и арбузу. Сочетание арбузной сладости и солоноватости феты уж точно удивит ваши вкусовые рецепторы!</li>
+              </ul>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment">ссылку на фрагмент страницы стороннего сайта</a></li>
+              </ul>
+              <ul>
+                <a>cсылки из прямоугольных и круглых областей картинки: </a>
+              </ul>
+              <ul>
+                <a><img src="./123.png" usemap="#image-map" width="500" height="500" alt="???"></a>
+                <map name="image-map">
+                  <area shape="rect" coords="0,0,100,100" href="http://google.com/" alt="???">
+                  <area shape="circle" coords="0,0,300" href="http://yandex.ru/" alt="???">
+                </map>
+              </ul>
+              <ul>
+                <li><a href="">ссылку с пустым href</a></li>
+                <li><a>ссылку без href</a></li>
+              </ul>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+                <li><noindex><a href="https://en.wikipedia.org/wiki/English_Wikipedia#WikiProjects_and_assessment" rel="nofollow">запрещенную для индексации поисковиками</a></noindex></li>
+              </ul>
+              <h2> Нумерованный список ссылок </h2>
+              <ol>
+                <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+                <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+                <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+                <li>title <a href="https://www.kubsu.ru">https://www.kubsu.ru</a></li>
+              </ol>
+              <h3> <a href="ftp://user:password@g.ru/gnu/file">ссылку на файл на сервере FTP с авторизацией</a></h3>
+            </div>
+            <div class="main-table">
+              <table>
+                <tr class="table-header">
+                  <th>Заголовок 1</th>
+                  <th>Заголовок 2</th>
+                  <th>Заголовок 3</th>
+                  <th>Заголовок 4</th>
+                </tr>
+                <tr class="row-even">
+                  <td colspan="2">Ячейка 1</td>
+                  <td>Ячейка 2</td>
+                  <td>Ячейка 3</td>
+                </tr>
+                <tr class="row-odd">
+                  <td>Ячейка 4</td>
+                  <td>Ячейка 5</td>
+                  <td colspan="2">Ячейка 6</td>
+                </tr>
+                <tr class="row-even">
+                  <td>Ячейка 7</td>
+                  <td>Ячейка 8</td>
+                  <td>Ячейка 9</td>
+                  <td>Ячейка 10</td>
+                </tr>
+                <tr class="row-odd">
+                  <td colspan="4">Ячейка 11</td>
+                </tr>
+                <tr class="row-even">
+                  <td>Ячейка 12</td>
+                  <td>Ячейка 13</td>
+                  <td>Ячейка 14</td>
+                  <td>Ячейка 15</td>
+                </tr>
+              </table>
+            </div>
+            <form action="/" method="POST">      
+              <label>
                 ФИО:
                 <br>
-            </label>
+              </label>
             <input name="field-name-1" >
             <br>
             <br>
             <label>
-                Телефон:
-                <br>
+              Телефон:
+              <br>
             </label>
             <input name="field-tel" type="tel">
             <br>
@@ -110,5 +195,12 @@
       
             <input type="submit">
             </form>
+          </nav>
+        </main>
+        <footer>
+          <div class="footer-container">
+              <p>(с) Никита Федченко</p>
+          </div>
+        </footer>
     </body>
 </html>

@@ -1,0 +1,135 @@
+header {
+    display: block;
+    background-color: #7fbae0;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    max-height: 120px;
+    padding: 10px;
+}
+
+.name1 {
+    display: inline;
+}
+
+.name2 {
+    display: inline;
+    float: right;
+}
+
+.name3 {
+    max-width: 80%;
+    margin:  auto;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 0, 0, 0.2);
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+main {
+    width: 100%;
+    max-width: 980px;
+    margin: 4dvh auto 0;
+}
+
+main .main-menu, form {
+    width: 100%;
+    max-width: 960px;
+    background-color: #F1F2F2;
+    padding: 2dvh;
+    border-radius: 10px;
+}
+main .main-menu ol {
+    align-items: center;
+}
+
+main .main-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+main .main-menu ul li .main-link {
+    text-decoration: none;
+    color: #000;
+}
+main .main-menu ul li .main-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #F1F2F2;
+    transition: background-color .3s;
+}
+main .main-menu ul li .main-link:hover::after {
+    background-color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5dvh 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr.table-header {
+    background-color: #f1f1f1;
+}
+
+tr.row-even {
+    background-color: #ffffff;
+}
+
+tr.row-odd {
+    background-color: #e6e6e6;
+}
+footer {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2dvh;
+}
+.footer-container {
+    width: 100%;
+    max-width: 980px;
+    margin: 4dvh 1dvw 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container p {
+    color: #000;
+    font-weight: 600;
+}
